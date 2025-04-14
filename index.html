@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORIK</title>
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/tailwindcss">
+    @layer base {
+      body {
+        font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-weight: 400;
+        color: black;
+        
+      }
+    }  
+    @layer utilities {
+    .bricolage_grotesque{
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+    .container{
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    }
+  </style>   
+
+<body>
+
+
+    <!-- Header -->
+
+    <div class="container bg-[#fff9f3] border-b border-[#e6e1f3] sticky top-0 z-50">
+
+        <div class="max-w-[1140px] m-auto flex justify-between items-center pt-[23px] pb-[8px]">
+
+            <div><img class="w-[82px] -mt-[14px]" src="./asset/image/logo-dark.svg" alt="logo"></div>
+
+            <div>
+                <ul class="flex gap-[21px] text-[#17134a] text-base font-medium">
+                    <li class="hover:text-[#3a30ba] duration-150"><a href="#">✨ Dorik AI</a></li>
+                    <li class="hover:text-[#3a30ba] duration-150"><a class="flex items-center" href="#">Product <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg></a></li>
+                    <li class="hover:text-[#3a30ba] duration-150"><a href="#">Templates</a></li>
+                    <li class="hover:text-[#3a30ba] duration-150"><a href="#">Pricing</a></li>
+                    <li class="hover:text-[#3a30ba] duration-150"><a class="flex items-center" href="#">Resources <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg></a></li>
+                </ul>
+            </div>
+
+            <div class="text-[#3a30ba] font-medium text-sm leading-[21px]">
+                <a class="mr-[11px] py-2 px-4 inline-block" href="#">Login</a>
+                <a class="border border-[#3a30ba] rounded-[5px] py-2 px-4 inline-block" href="#">Sign Up</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hero -->
+
+    <div class="container bg-[#fff9f3] py-19">
+
+        <div class="max-w-[1140px] m-auto text-center">
+
+            <div class="max-w-[650px] text-center m-auto">
+                <h2 class=" text-[71px] leading-[71px] text-[#17134a] bricolage_grotesque font-semibold tracking-[-1.5px]">Build Websites with the Power of AI</h2>
+                <p class="text-[#45426e] text-[22px] leading-[33px] pt-7">It takes minutes to finish a website with Dorik, it's simple, intuitive and can be easily learned by beginners</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-[30px] mt-4">
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">Landing Pages</h4>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">AI Generated Content</h4>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">Free Stock Images</h4>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">Blogs</h4>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">Web Analytics</h4>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" class="w-[21px] text-[#3a30ba] svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>
+                    <h4 class="text-[#45426e] text-lg leading-[27px] font-medium">White-Label CMS</h4>
+                </div>          
+            </div>
+
+            <div class="flex justify-center w-[380px] py-4 mt-4 m-auto bg-[url('./asset/image/hero-img/button-bg.svg')] bg-no-repeat bg-contain bg-center">
+                <a class="bg-[#3a30ba] flex items-center justify-center font-medium text-white text-xl leading-[30px] rounded-[5px] gap-[12px] py-4 px-[34px] duration-300 hover:bg-[#151474]" href="#">Try it Free <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class=" text-white w-[8px] svg-inline--fa fa-angle-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-testid="icon-test"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg></a>
+            </div>
+
+            <div class="flex justify-center items-center gap-[40px] mt-12">
+                <h4 class="text-[#45426e] text-base/6">Featured on:</h4>
+                <img class="w-[97px]" src="./asset/image/hero-img/usa-today-new-1-1-1-1isQue.svg" alt="">
+                <img class="w-[70px] h-[35px]" src="./asset/image/hero-img/wlz8cbkhsk7tdjvq27vsel7whrf0sf3rcaoslpdq-_8Kimv.webp" alt="">
+                <img class="w-[35px] h-[35]" src="./asset/image/hero-img/pcmag-wggP-y.svg" alt="">
+                <img class="w-[109px]" src="./asset/image/hero-img/hubspot_logo-I6cXPe.svg" alt="">
+                <img class="w-[125px]" src="./asset/image/hero-img/usn-logo-large-b5R6h2.svg" alt="">
+            </div>
+
+            <img class="m-auto max-w-[258px] mt-6" src="./asset/image/hero-img/imageremovebgpreview3-q_fvA.webp" alt="imageremovebgpreview3">
+
+            <div style="background-position: top 33% bottom 0% left 30%;" class="min-h-800px bg-[url('./asset/image/hero-img/cms-bg_2b06w496.svg')] bg-contain bg-no-repeat bg-top  bg-left p-[10px] pb-[40px] mt-[14px]">
+
+                <div class="max-w-[997px] m-auto p-5 pb-[14px] rounded-[26px] backdrop-blur-[5px] bg-[linear-gradient(130deg,_rgba(155,144,196,0.1)_0%,_rgba(62,67,127,0.2)_100%)]">
+
+                    <div class="min-h-[470px] rounded-[20px] bg-[url('./asset/image/hero-img/41829376516705076200196503870756626797345056n-0OU1W.webp')] bg-cover bg-center flex justify-center items-center">
+
+                        <div class="cursor-pointer bg-[#8c3bfc] py-5 px-[37px] rounded-[10px] duration-100 hover:bg-[#27a6fe]">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" class="text-white w-[22px] svg-inline--fa fa-play fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-testid="icon-test"><path fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Three Image Box -->
+    
+    <div class="container bg-[linear-gradient(to_bottom,_#fff9f3_0%,_#fff9f3_50%,_#ffffff_50%,_#ffffff_100%)] -mt-1 pb-4">
+
+        <div class="max-w-[1140px] m-auto flex bg-white border-b border-[#e6e6ec]">
+
+            <div class="pt-[20px] pb-[28px] px-[20px] text-center w-1/3">
+                <div>
+                    <img class="w-[60px] h-[60px] m-auto rounded-full object-cover" src="./asset/image/three-boxes/rsz_1screenshot_2022-07-20_at_21046_am_1775qlqn-fssiwV.webp" alt="">
+                    <p class="text-[#45426e] text-lg leading-[27px] mt-4 mb-[10px]">I can't tell you how much I love Dorik! <span class="font-bold bg-[#fcf2de]">I can create beautiful websites without even touching a line of code.</span></p>
+                </div>
+
+                <div>
+                    <h3 class="text-[#17134a] leading-[28px] text-xl font-semibold">Oday Mashalla</h3>
+                    <p class="text-[#45426e] text-sm leading-[21px]">Design Director @ humblebee</p>
+                </div>
+            </div>
+
+            <div class="pt-[20px] pb-[28px] px-[20px] text-center w-1/3">
+                <div>
+                    <img class="w-[60px] h-[60px] m-auto rounded-full object-cover" src="./asset/image/three-boxes/1667061146730-PoXcN_.webp" alt="">
+                    <p class="text-[#45426e] text-lg leading-[27px] mt-4 mb-[10px]"><span class="font-bold bg-[#fcf2de]">One of the best website building tools</span>.
+                        Great product!!</p>
+                </div>
+
+                <div>
+                    <h3 class="text-[#17134a] leading-[28px] text-xl font-semibold">Upen V.</h3>
+                    <p class="text-[#45426e] text-sm leading-[21px]">Founder @ Siteoly</p>
+                </div>
+            </div>
+
+            <div class="pt-[20px] pb-[28px] px-[20px] text-center w-1/3">
+                <div>
+                    <img class="w-[60px] h-[60px] m-auto rounded-full object-cover" src="./asset/image/three-boxes/1685951024237-jB_6kq.webp" alt="">
+                    <p class="text-[#45426e] text-lg leading-[27px] mt-4 mb-[10px]">I'm so in love with this tool! <span class="font-bold bg-[#fcf2de]">Building websites has never been this FAST and EASY!</span></p>
+                </div>
+
+                <div>
+                    <h3 class="text-[#17134a] leading-[28px] text-xl font-semibold">Laura Ang</h3>
+                    <p class="text-[#45426e] text-sm leading-[21px]">Design Fellow (ODD3), On Deck</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ♡ Loved by cool people from -->
+
+        <div class="max-w-[1140px] m-auto py-[50px]">
+
+            <h3 class="text-center text-[#17134a] font-semibold text-xl	leading-[28px] mb-8"><span class="text-[#de238e]">♡</span> Loved by cool people from</h3>
+
+            <div class="flex items-center justify-center gap-[50px]">
+                <img class="w-[95px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/netflix_logo_rgb-wjeQyf.webp" alt="">
+                <img class="w-[40px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/flippa-logos-idibb6mjpq-gOVSUs.webp" alt="">
+                <img class="w-[90px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/wordmark-nospace-stacked-red-T6WNqN.webp" alt="">
+                <img class="w-[40px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/iimcb-blue-transparent-background-IrBAFT.webp" alt="">
+                <img class="w-[84px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/5b3a97163c43bae706308fca_logo_horz_mint_bg@2x-ke4VOy.webp" alt="">
+                <img class="w-[160px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/decathlon-logo-qh264k.svg" alt="">
+                <img class="w-[40px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/channels4_profile-Ui18Oe.webp" alt="">
+                <img class="w-[160px] grayscale-100 sepia-0 blur-0 brightness-100 hue-rotate-0 saturate-100 opacity-100 contrast-100 invert-0" src="./asset/image/three-boxes/people-from/vivacom-logo-Mc4Rec.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Four Box -->
+
+    <div class="container py-[40px]">
+
+        <div class="max-w-[1180px] m-auto flex flex-col gap-[60px]">
+
+
+            <!-- Transform Your Ideas into Reality with AI -->
+
+            <div class="w-full flex flex-col py-[35px] px-10 rounded-[5px] bg-[#fff9f3]">
+
+                <div class="flex items-center gap-10 pb-[65px] border-b border-[#e6e1e1]">
+                    <div class="w-1/2 flex flex-col items-start gap-5">
+                        <h2 class="text-[#17134a] text-[49px] leading-[49px] bricolage_grotesque font-medium">Transform Your Ideas into Reality with AI</h2>
+                        <h4 class="text-[#45426e] text-[20px] leading-[30px]">Bring your creative vision to life with Dorik AI</h4>
+                        <div class="flex flex-col gap-[10px]">
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Website Generation</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">AI-Generated Contents (Text & Images)</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Build Website in Any Language</h5>
+                            </div>
+                        </div>
+                        <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">Try Dorik Now <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+    
+                    <div class="w-1/2 class flex flex-col gap-3 justify-center items-center">
+                        <img class="max-w-[530px]" src="./asset/image/four-container/website-generation-1-GWTEAs.webp" alt="">
+                        <h3 class="	text-[18px] leading-[24px] text-center text-[#45426e]">Prompt: <span class="italic">"Build a website for my coffeeshop"</span> </h3>
+                    </div>
+                </div>
+
+                <div class="flex gap-10 mt-[25px]">
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Stunning Websites</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Type a prompt, get a full website using the power of cutting-edge AI technology</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit" color="[object Object]"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Compelling Copies</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Generate all your website content in two steps—a prompt & a click!</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Pixel Perfect Images</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Type a prompt and generate the exact image on your mind.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No-Code Website Builder -->
+
+            <div class="w-full flex flex-col py-[35px] px-10 rounded-[5px] bg-[#fdeff7]">
+
+                <div class="flex items-center gap-10 pb-[45px] border-b border-[#e6e1e1]">
+                    <div class="w-1/2 flex flex-col items-start gap-5">
+                        <h2 class="text-[#17134a] text-[49px] leading-[49px] bricolage_grotesque font-medium">No-Code Website Builder</h2>
+                        <h4 class="text-[#45426e] text-[20px] leading-[30px]">Unleash your creativity with our easy-to-use and powerful website builder.</h4>
+                        <div class="flex flex-col gap-[10px]">
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Create websites in minutes without any code</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Say goodbye to lengthy development time</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Customize everything to match your vision</h5>
+                            </div>
+                        </div>
+                        <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">Try Dorik Now <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+    
+                    <div class="w-1/2 class flex flex-col gap-3 justify-center items-center">
+                        <img class="max-w-[530px]" src="./asset/image/four-container/website-builder-wVoV4o.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="flex gap-10 mt-[25px]">
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool" color="[object Object]"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Drag & Drop Builder</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Drag-and-drop builder makes website creation a breeze. No coding is required.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box" color="[object Object]"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Templates</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">With pre-designed templates, you can quickly build your website.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid" color="[object Object]"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">250+ UI Blocks</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Pre-designed UI blocks to make your building journey faster</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- White-Label CMS -->
+
+            <div class="w-full flex flex-col py-[35px] px-10 rounded-[5px] bg-[#f1faf7]">
+
+                <div class="flex items-center gap-10 pb-[45px] border-b border-[#e6e1e1]">
+                    <div class="w-[42%] flex flex-col items-start gap-5">
+                        <h2 class="text-[#17134a] text-[49px] leading-[49px] bricolage_grotesque font-medium">White-Label CMS</h2>
+                        <h4 class="text-[#45426e] text-[20px] leading-[30px]">A complete solution to build websites under your brand for your clients.</h4>
+                        <div class="flex flex-col gap-[10px]">
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Add your own brand’s logo and colors</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Dedicated dashboard for your client</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Build anything from blogs to directories</h5>
+                            </div>
+                        </div>
+                        <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">Try Dorik Now <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+    
+                    <div class="w-[58%] class flex flex-col gap-3 justify-center items-center">
+                        <img class="max-w-[610px]" src="./asset/image/four-container/cms-QPFn1k.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="flex gap-10 mt-[25px]">
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3" color="[object Object]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Built-in Blogging Platform</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Build and publish blogs with all the features you need to rank on Google and grow audience.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard" color="[object Object]"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">White Label Dashboard</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">A white-label dashboard for your clients that you can brand as your own</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card" color="[object Object]"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Client Billing</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Send invoices and receive payments from your clients directly from your dashboard.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Build with Airtable Data -->
+
+            <div class="w-full flex flex-col py-[35px] px-10 rounded-[5px] bg-[#eeebfa]">
+
+                <div class="flex items-center gap-10 pb-[45px] border-b border-[#d7d4e8]">
+                    <div class="w-1/2 flex flex-col items-start gap-5">
+                        <h2 class="text-[#17134a] text-[49px] leading-[49px] bricolage_grotesque font-medium">Build with Airtable Data</h2>
+                        <h4 class="text-[#45426e] text-[20px] leading-[30px]">Bring your Airtable Data to beautiful interfaces with our Airtable elements</h4>
+                        <div class="flex flex-col gap-[10px]">
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Present your data from Airtable into beautiful interfaces</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Easy-to-use filter and search option for your users</h5>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <svg class="text-[#3a30ba] mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check" color="undefined"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <h5 class="text-[#45426e] text-[18px] leading-[27px] font-medium">Create blogs, job boards, shops, profiles, and more
+                                </h5>
+                            </div>
+                        </div>
+                        <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">Try Dorik Now <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+    
+                    <div class="w-1/2 class flex flex-col gap-3 justify-center items-center">
+                        <img class="max-w-[530px]" src="./asset/image/four-container/airtable-integrations-_QBDfM.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="flex gap-10 mt-[25px]">
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Beautiful Layouts</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Showcase your data in any layout, like the grid, table, job board, etc.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap" color="[object Object]"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Realtime Update</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Update data on Airtable and it will be updated on your website instantly</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col gap-[18px] py-[15px]">
+                        <svg class="text-[#3a30ba]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database" color="[object Object]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        <h3 class="text-[#17134a] font-semibold text-[20px] leading-[28px]">Advanced Customization</h3>
+                        <p class="text-[#45426e] text-[18px] leading-[27px]">Use Airtable as a data source in Dorik CMS and customize everything.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- Join over 100k+ -->
+
+    <div class="container py-20">
+
+        <div class="max-w-[1140px] m-auto flex gap-10">
+
+            <div class="w-[50%] flex flex-col items-start gap-[16px]">
+                <h2 class="text-[#17134a] text-[60px] leading-[60px] font-medium bricolage_grotesque">Join over 100k+ happy users from around the world!</h2>
+                <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">Wall of Love <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+            </div>
+
+            <div class="w-[50%]">
+                <h3 class="text-center text-[#17134a] font-semibold text-xl	leading-[28px] mb-[40px]"><span class="text-[#de238e]">♡</span> Loved by cool people from</h3>
+                <div class="flex justify-center items-center flex-wrap gap-x-[40px] gap-y-[30px]">
+                    <img class="w-[95px]" src="./asset/image/three-boxes/people-from/netflix_logo_rgb-wjeQyf.webp" alt="">
+                    <img class="w-[40px]" src="./asset/image/three-boxes/people-from/flippa-logos-idibb6mjpq-gOVSUs.webp" alt="">
+                    <img class="w-[90px]" src="./asset/image/three-boxes/people-from/wordmark-nospace-stacked-red-T6WNqN.webp" alt="">
+                    <img class="w-[40px]" src="./asset/image/three-boxes/people-from/iimcb-blue-transparent-background-IrBAFT.webp" alt="">
+                    <img class="w-[84px]" src="./asset/image/three-boxes/people-from/5b3a97163c43bae706308fca_logo_horz_mint_bg@2x-ke4VOy.webp" alt="">
+                    <img class="w-[160px]" src="./asset/image/three-boxes/people-from/decathlon-logo-qh264k.svg" alt="">
+                    <img class="w-[40px]" src="./asset/image/three-boxes/people-from/channels4_profile-Ui18Oe.webp" alt="">
+                    <img class="w-[160px]" src="./asset/image/three-boxes/people-from/vivacom-logo-Mc4Rec.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Beautiful designs, Endless possibilities -->
+
+    <div class="container bg-[#030521] pt-[120px] pb-20">
+        <div class="max-w-[1140px] m-auto flex flex-col gap-23">
+            <h2 class="text-[60px] leading-[60px] bricolage_grotesque text-white font-medium tracking-[-1px] max-w-[550px]">Beautiful designs, Endless possibilities</h2>
+
+            <div class="flex gap-10">
+
+                <div class="w-1/3 p-[30px] border border-[#1d1e38] ">
+                    <h3 class="my-[12px] text-[#d1d0db] text-[22px] leading-[18px] bricolage_grotesque font-semibold">Amazing Templates</h3>
+                    <h4 class="my-[5px] text-[#cdcdd3] text-[18px] leading-[27px]">100<span class="underline decoration-[#3a30ba]">+ Beautiful Templates</span></h4>
+                </div>
+
+                <div class="w-1/3 p-[30px] border border-[#1d1e38] font-semibold">
+                    <h3 class="my-[12px] text-[#d1d0db] text-[22px] leading-[18px] bricolage_grotesque font-semibold">UI Blocks</h3>
+                    <h4 class="my-[5px] text-[#fcf2de] text-[18px] leading-[27px] underline decoration-[#3a30ba]">250+ Stunning UI Blocks</h4>
+                </div>
+
+                <div class="w-1/3 p-[30px] border border-[#1d1e38] font-semibold">
+                    <h3 class="my-[12px] text-[#d1d0db] text-[22px] leading-[18px] bricolage_grotesque font-semibold">Elements</h3>
+                    <h4 class="my-[5px] text-[#a2a1b7] text-[18px] leading-[27px]">20+ Elements</h4>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[#030521]">
+        <img class="w-full" src="./asset/image/beautiful-designs/template-3_eolpvj63_ithba1dq.webp" alt="beautiful">
+    </div>
+
+
+    <!-- No Maintenance, More Freedom.  -->
+
+    <div class="container py-[120px] bg-white">
+
+        <div class="max-w-[1140px] m-auto">
+            <div class="text-center">
+                <h2 class="text-[#17134a] bricolage_grotesque tracking-[-1px] text-6xl leading-[60px] font-medium">No Maintenance, More Freedom. </h2>
+                <h3 class="text-[#45426e] text-2xl/9 mt-4">The perfect launchpad for your online presence</h3>
+            </div>
+
+            <div class="grid grid-cols-3 gap-[50px] mt-25">
+
+                <div>
+                    <svg class="text-[#8c3bfc]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class=" feather feather-server" color="[object Object]"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Reliable Hosting & CDN</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">We host the websites on AWS & DigitalOcean and serve static content from our Global CDN</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#de238e]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield" color="[object Object]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Free SSL/HTTPS</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Every website built and hosted on our platform comes with a free SSL certificate issued by Let's Encrypt</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#27a6fe]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus" color="[object Object]"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Team Collaboration</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Collaborate with your team and get input on designs, feedback, or brainstorming sessions.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#de238e]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card" color="[object Object]"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Payment Integration</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Integrate PayPal, Stripe, & Gumroad without code to receive payments from your users.</p>
+                </div>
+
+                <div>
+                    <svg  class="text-[#8c3bfc]"xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud-snow" color="[object Object]"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Unlimited Storage & Bandwidth</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Don’t worry about your site’s storage and bandwidth because Dorik provides you with all the site storage you need.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#de238e]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder-minus" color="[object Object]"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Forms</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Add subscription & contact form easily to your website. Connect popular platforms like Zapier, MailChimp, etc.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#de238e]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" color="[object Object]"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">User Analytics</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Measure and analyze user data to get an understanding of user behavior across your web pages</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#27a6fe]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock" color="[object Object]"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Password Protected Pages</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Protect any page on your website with a password. Securely share your pages with your clients.</p>
+                </div>
+                
+                <div>
+                    <svg class="text-[#8c3bfc]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" color="[object Object]"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Native SEO</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Optimize your content for SEO and social media to maximize the reach of each post.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#8c3bfc]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe" color="[object Object]"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Custom Domain</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Connect your custom domain or subdomain easily from any domain provider to our platform.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#de238e]"  xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code" color="[object Object]"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">AI Code Export</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Export your AI-generated website's clean and un-minified HTML/CSS/JS code with Media files.</p>
+                </div>
+
+                <div>
+                    <svg class="text-[#27a6fe]"  xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2" color="[object Object]"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <h3 class="text-[#17134a] text-2xl leading-[26px] font-semibold bricolage_grotesque mb-[19px] mt-[18px]">Integrations</h3>
+                    <p class="text-[#45426e] text-lg leading-[27px]">Collect and send data to popular platforms like Zapier, MailChimp, Airtable, etc using forms.</p>
+                </div>
+                
+              </div>
+
+        </div>
+
+    </div>
+
+    <!-- Affordable Pricing -->
+
+    <div class="container py-[120px] bg-[#fff9f3]">
+
+        <div class="max-w-[790px] m-auto text-center flex flex-col items-center justify-center gap-4">
+            <h2 class="text-[#17134a] text-6xl leading-[60px] font-medium bricolage_grotesque tracking-[-1px]">Affordable Pricing</h2>
+            <p class="text-[#45426e] text-lg leading-[27px]">Start building your websites for free. Upgrade to any paid plans to unlock features like forms, custom domains, and more.</p>
+            <a class="flex gap-[7px] items-center text-base/6 font-medium text-white bg-[#3a30ba] py-3 px-[27px] rounded-[5px] mt-[14px] duration-300 hover:bg-[#141372]" href="#">See Pricing <svg class="w-[10.5px] " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+        </div>
+
+    </div>
+
+    <!-- Extended Guides, -->
+
+    <div class="container py-[120px]">
+
+        <div class="max-w-[1140px] m-auto text-center">
+
+            <div class="pb-20">
+                <h2 class="text-[#17134a] text-6xl leading-[60px] font-medium bricolage_grotesque tracking-[-1px]">Extended Guides, Live Support & Community to help you</h2>
+            </div>
+
+            <div class="w-full flex gap-10 m-auto">
+
+                <div class="w-1/3  flex flex-col justify-between text-start p-[30px] pt-[50px] bg-[#f6f6fc] rounded-[10px] border-b-3 border-[#8c3bfc]">
+                    <div>
+                        <h3 class="text-[#17134a] font-semibold leading-[26px] text-2xl bricolage_grotesque">Documentation</h3>
+                        <p class="text-[#45426e] text-lg leading-[27px] py-4">We have extensive documentation on getting started with Dorik, as well as how to design and customize your website.</p>
+                    </div>
+                    <a class="flex items-center text-base leading-[18px] font-medium gap-[5px] py-[10px] duration-150 hover:text-[#3a30ba]" href="#">Dorik Helpdesk <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="w-[9px] svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                </div>
+
+                <div class="w-1/3  flex flex-col justify-between text-start p-[30px] pt-[50px] bg-[#f6f6fc] rounded-[10px] border-b-3 border-[#de238e]">
+                    <div>
+                        <h3 class="text-[#17134a] font-semibold leading-[26px] text-2xl bricolage_grotesque">Live Chat Support</h3>
+                        <p class="text-[#45426e] text-lg leading-[27px] py-4">We are always available on our support channels to help you. Live chat with us or send an email, we will get back to you asap.</p>
+                    </div>
+                    <a class="flex items-center text-base leading-[18px] font-medium gap-[5px] py-[10px] duration-150 hover:text-[#3a30ba]" href="#">Start Live Chat <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="w-[9px] svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                </div>
+
+                <div class="w-1/3 flex flex-col justify-between text-start p-[30px] pt-[50px] bg-[#f6f6fc] rounded-[10px] border-b-3 border-[#ffcc85]">
+                    <div>
+                        <h3 class="text-[#17134a] font-semibold leading-[26px] text-2xl bricolage_grotesque">Online Forum</h3>
+                        <p class="text-[#45426e] text-lg leading-[27px] py-4">We have a dedicated forum to communicate with our users. In addition to us, the community helps each other to grow.</p>
+                    </div>
+                    <a class="flex items-center text-base leading-[18px] font-medium gap-[5px] py-[10px] duration-150 hover:text-[#3a30ba]" href="#">Facebook Community <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="w-[9px] svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="container pt-[120px] pb-[30px] bg-[url('./asset/image/footer-img/footer-bg-2_71chjwos-1_iyenu6o2.svg')] bg-contain bg-top bg-no-repeat bg-[#030521]">
+
+        <div class="max-w-[1140px] m-auto">
+            <h2 class="text-white text-6xl leading-[60px] tracking-[-1px] text-center font-medium bricolage_grotesque mb-7">Start Building Your Website!</h2>
+            <div class="flex justify-center w-[380px] py-4 mt-4 m-auto bg-[url('./asset/image/hero-img/button-bg.svg')] bg-no-repeat bg-contain bg-center">
+                <a class="bg-[#3a30ba] flex items-center justify-center font-medium text-white text-xl leading-[30px] rounded-[5px] gap-[12px] py-4 px-[34px] duration-300 hover:bg-[#151474]" href="#">Try Dorik Now <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class=" text-white w-[8px] svg-inline--fa fa-angle-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-testid="icon-test"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg></a>
+            </div>
+        </div>
+
+        <div class="max-w-[1180px] flex gap-5 m-auto px-5 py-10 border-y border-[#45426E] mt-20">
+            <div class="w-[42%] pr-8">
+                <img class="w-[150px]" src="./asset/image/logo-white.svg" alt="logo">
+                <h4 class="text-[#a2a1b7] text-base	leading-6 mt-[30px] mb-4">❤️ This website is built with Dorik, without writing any code</h4>
+                <img class="w-[250px]" src="./asset/image/footer-img/top-post-badge_ikq2y206.svg" alt="">
+                <div class="flex gap-[8px] max-w-[260px] rounded-[8px] items-center py-[8px] px-[12px] bg-[#2b2b2b] border border-[#000000] mt-[30px] hover:bg-[#424242]">
+                    <div class="w-[16px] h-[16px] rounded-full bg-[#33b17e]"></div>
+                    <h4 class="text-white font-semibold">All systems operational</h4>
+                </div>
+            </div>
+            <div class="w-[20%]">
+                <h3 class="text-white font-semibold text-base leading-[22px] mb-[5px] uppercase">GENERAL</h3>
+                <ul class="text-[#a2a1b7] flex flex-col gap-1 text-base	leading-6">
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">About Dorik</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Public Roadmap</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Changelog</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Affiliate Program</a></li>
+                </ul>
+                <h3 class="text-white font-semibold text-base leading-[22px] mb-[5px] uppercase mt-[25px]">Resources</h3>
+                <ul class="text-[#a2a1b7] flex flex-col gap-1 text-base	leading-6">
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Documentation</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Tutorial Videos</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Community</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Dorik Blog</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Free Illustrations</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Partners</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">AI Tools Directory</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Write for Dorik</a></li>
+
+                </ul>
+            </div>
+            <div class="w-[20%]">
+                <h3 class="text-white font-semibold text-base leading-[22px] mb-[5px] uppercase">Follow Us</h3>
+                <ul class="text-[#a2a1b7] flex flex-col gap-1 text-base	leading-6">
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Twitter</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">LinkedIn</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Facebook</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a class="flex items-center gap-[11px]" href="#">Discord <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="text-[#ffcc85] w-5 svg-inline--fa fa-discord fa-fw icon icon_349i9ykz" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-testid="icon-test"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg></a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">Instagram</a></li>
+                    <li class="duration-150 hover:text-[#fff]"><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="w-[18%]">
+                <h3 class="text-white font-semibold text-base leading-[22px] mb-[5px] uppercase">Partner Program</h3>
+                <p class="text-[#d1d0db] text-sm leading-[21px] mt-[10px] -mb-1">Earn up to 40% recurring commission</p>
+                <a class="flex items-center text-[#ffcc85] text-base leading-[24px] gap-[6px] py-[10px] duration-150 hover:text-[#fff]" href="#">Become a Partner<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="w-[11px] svg-inline--fa fa-arrow-right fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+            </div>
+        </div>
+
+        <div class="max-w-[1180px] flex justify-between gap-5 m-auto px-5 pt-[46px] pb-4 text-sm leading-[21px] text-[#a2a1b7]">
+            <h4>© 2024 Dorik, Inc. All rights reserved</h4>
+            <ul class="flex gap-[19px]">
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
